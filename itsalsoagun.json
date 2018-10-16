@@ -1,0 +1,2235 @@
+{
+    "Volume 1": {
+        "\"Red\"": [
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "This trailer has a length of 3:28, and only half of that is fighting. Despite that, there are ~35-40 gun shots, leading to ~35-40 dead Grimm.",
+                "count": 36,
+                "target": "Grimm"
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Not only that, but there are a few instances where she uses the recoil to line up her next shot or to otherwise control her movement.",
+                "count": 11
+            }
+        ],
+        "\"White\"": [],
+        "\"Black\"": [
+            {
+                "character": "Adam",
+                "score": "useful",
+                "description": "Though he finishes the kill against the AK-130 with his sword, he does get good mileage from firing Wilt from Blush.",
+                "count": 1
+            },
+            {
+                "character": "Adam",
+                "score": "useless",
+                "description": "He fires a few shots at things offscreen. It doesn't look like they've done anything?",
+                "count": 2
+            },
+            {
+                "character": "AK-130",
+                "score": "useless",
+                "description": "It fires a large number of bullets (~13 shots/s for 4 seconds = 52 shots) at Blake and Adam, though the latter blocks most of them. Another's bullets are blocked by Blake as she rushes forward.",
+                "count": 52,
+                "exclusive": true
+            },
+            {
+                "character": "Blake",
+                "score": "useful",
+                "description": "She uses the recoil from Gambol Shroud to pull it back toward her faster. She continues firing as she swings it around, killing a few AK-130s.",
+                "count": 9
+            },
+            {
+                "character": "Adam",
+                "score": "useful",
+                "description": "After a quick flurry of attacks from Wilt, he fires off a single shot, killing another AK-130.",
+                "count": 1
+            },
+            {
+                "character": "Adam",
+                "score": "useful",
+                "description": "Again, a single shot kills an AK-130.",
+                "count": 1
+            },
+            {
+                "character": "Spider Droid",
+                "score": "useless",
+                "description": "Despite its power, it just misses Adam and Blake repeatedly.",
+                "count": 17,
+                "exclusive": true
+            },
+            {
+                "character": "Spider Droid",
+                "score": "useful",
+                "description": "Its charge shot throws Adam and Blake out of the train car.",
+                "count": 1,
+                "exclusive": true
+            },
+            {
+                "character": "Blake",
+                "score": "useless",
+                "description": "While attacking the Spider Droid as a distraction, she fires a handful of shots. They don't hurt the droid.",
+                "count": 9
+            },
+            {
+                "character": "Spider Droid",
+                "score": "useless",
+                "description": "It still misses Blake.",
+                "count": 4,
+                "exclusive": true
+            },
+            {
+                "character": "Spider Droid",
+                "score": "useless",
+                "description": "Really only because it was against Adam, but its charge shot is absorbed by Wilt.",
+                "count": 1,
+                "exclusive": true
+            }
+        ],
+        "\"Yellow\"": [
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Yang uses the recoil from Ember Celica to propel herself through the air.",
+                "count": 4
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "She fires a bullet with a large number of her punches.",
+                "count": 28
+            },
+            {
+                "character": "Yang*",
+                "score": "useful",
+                "description": "Towards the end of her punching spree against Junior, she activates her Semblance.",
+                "count": 2
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "",
+                "count": 20
+            },
+            {
+                "character": "Junior",
+                "score": "useless",
+                "description": "He has an RPG launcher. You'd think he'd be able to hit something.",
+                "count": 14
+            },
+            {
+                "character": "Junior's Men",
+                "score": "useless",
+                "description": "It's Panda DJ this time.",
+                "count": 37,
+                "exclusive": true
+            }
+        ],
+        "Chapter 1": [
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses the recoil from Crescent Rose to control her movement, allowing for a quick takedown of Junior's men.",
+                "count": 5
+            },
+            {
+                "character": "Junior's Men",
+                "score": "useless",
+                "description": "One of Junior's men fires on Ruby, but it's a great example of quality over quantity.",
+                "count": 22,
+                "exclusive": true
+            },
+            {
+                "character": "Roman",
+                "score": "utility",
+                "description": "Roman shoots a single explosive shot, which Ruby dodges, but it allows him enough time to start to escape.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses C.R. to bounce up to the building that Roman has been climbing.",
+                "count": 1
+            },
+            {
+                "character": "Roman",
+                "score": "useless",
+                "description": "Roman fires another explosive shot in order to explode a fire Dust crystal, but Glynda(-ex-machina) blocks the explosion.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Ruby shoots at Cinder, but she just blocks the shots with her hand/Aura.",
+                "count": 5
+            }
+        ],
+        "Chapter 2": [],
+        "Chapter 3": [],
+        "Chapter 4": [],
+        "Chapter 5": [
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Landing strategy -- Ruby uses C.R. to slow her descent.",
+                "count": 3
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Landing strategy -- Yang uses E.C. to prolong her flight.",
+                "count": 9
+            },
+            {
+                "character": "Pyrrha",
+                "score": "utility",
+                "description": "Landing strategy -- Pyrrha shoots Milo's javelin form to catch Jaune.",
+                "count": 1
+            }
+        ],
+        "Chapter 6": [
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "Yang is fighting two Ursai, which stagger significantly when hit.",
+                "count": 3,
+                "target": "Grimm"
+            },
+            {
+                "character": "Yang*",
+                "score": "utility",
+                "description": "\"You couldn't hit the broad side of a b-\" [hair strand falls]",
+                "count": 4
+            },
+            {
+                "character": "Yang*",
+                "score": "useful",
+                "description": "\"You two couldn't hit the broad side of a b-\" [hair strand falls]",
+                "count": 12,
+                "target": "Grimm"
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "During Pyrrha's explanation of Aura, Ren fights a King Taijitsu. He fires a few rounds, but it's his melee attacks that actually do stuff.",
+                "count": 42,
+                "target": "Grimm"
+            }
+        ],
+        "Chapter 7": [],
+        "Chapter 8": [
+            {
+                "character": "Nora",
+                "score": "useful",
+                "description": "Nora and Ren ride in on an Ursa. Nora shoots it in order to get it to go faster... but it dies, instead.",
+                "count": 1,
+                "target": "Grimm"
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses C.R. to propel herself towards the Death Stalker.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Crescent Rose's bullets don't do much against the Death Stalker.",
+                "count": 1,
+                "target": "Grimm"
+            },
+            {
+                "character": "Nora",
+                "score": "useful",
+                "description": "Nora's shots stagger the Nevermore.",
+                "count": 7,
+                "target": "Grimm"
+            },
+            {
+                "character": "Pyrrha",
+                "score": "useless",
+                "description": "Pyrrha fires on the Death Stalker as RWBY/JNPR walk over the bridge.",
+                "count": 5,
+                "target": "Grimm"
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Ren also fires on the Death Stalker.",
+                "count": 18,
+                "target": "Grimm"
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Fires at the offscreen Nevermore. No indication of anything happening.",
+                "count": 2,
+                "target": "Grimm"
+            },
+            {
+                "character": "Pyrrha",
+                "score": "useless",
+                "description": "Pyrrha and Ren are still shooting at the Death Stalker.",
+                "count": 8,
+                "target": "Grimm"
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Pyrrha and Ren are still shooting at the Death Stalker.",
+                "count": 36,
+                "target": "Grimm"
+            },
+            {
+                "character": "Nora",
+                "score": "utility",
+                "description": "After hammering the bridge so that Jaune could cross the gap, Nora uses the recoil from Magnhild to cross, then again to rebound off of the Death Stalker.",
+                "count": 2
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "I think it's Yang? As Blake falls, we see two shots hit the Nevermore.",
+                "count": 2,
+                "target": "Grimm"
+            },
+            {
+                "character": "Blake",
+                "score": "utility",
+                "description": "As Blake falls, we hear a gunshot as she throws the pistol form of G.S. to use as a grappling hook.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "This is the moment when all hell breaks loose. All four members of Team RWBY open fire on the Nevermore.",
+                "count": 3
+            },
+            {
+                "character": "Blake",
+                "score": "useless",
+                "description": "This is the moment when all hell breaks loose. All four members of Team RWBY open fire on the Nevermore.",
+                "count": 8
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "This is the moment when all hell breaks loose. All four members of Team RWBY open fire on the Nevermore.",
+                "count": 13
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "After the Nevermore breaks the tower, RWBY has to climb back up to the bridge.",
+                "count": 4
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "After the Nevermore breaks the tower, RWBY has to climb back up to the bridge.",
+                "count": 3
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "On the bridge, Yang tries shooting at the Nevermore.",
+                "count": 7
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "She tells Weiss that she has a plan, then uses C.R. to propel herself.",
+                "count": 1
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Back to Team JNPR, Ren fires on the Death Stalker.",
+                "count": 21
+            },
+            {
+                "character": "Nora",
+                "score": "useless",
+                "description": "Now it's Nora's turn.",
+                "count": 2
+            },
+            {
+                "character": "Nora",
+                "score": "utility",
+                "description": "In order to kill the Death Stalker, Nora jumps off of Pyrrha's shield, using the recoil from Magnhild to go even higher.",
+                "count": 2
+            },
+            {
+                "character": "Nora",
+                "score": "useful",
+                "description": "She uses the recoil from Magnhild to kill the Death Stalker (and launch herself off of the bridge).",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "Yang is firing on the Nevermore. Her first 7 shots don't do anything.",
+                "count": 7
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "...her next few shots are great, straight down its throat, sending it into the cliff.",
+                "count": 6
+            },
+            {
+                "character": "Blake",
+                "score": "utility",
+                "description": "Blake uses the recoil from G.S. to throw the pistol form to Yang.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "She uses one shot to position herself in the slingshot, then another 18 to run up the cliff.",
+                "count": 19
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "Her final shot kills the Nevermore.",
+                "count": 1
+            }
+        ],
+        "Chapter 9": [],
+        "Chapter 10": [],
+        "Chapter 11": [],
+        "Chapter 12": [],
+        "Chapter 13": [],
+        "Chapter 14": [],
+        "Chapter 15": [],
+        "Chapter 16": [
+            {
+                "character": "Roman",
+                "score": "utility",
+                "description": "Roman fires a shot at Blake's foot, forcing her to retreat and release him from knife point.",
+                "count": 1
+            },
+            {
+                "character": "Roman",
+                "score": "useless",
+                "description": "Roman fires on Blake, who manages to dodge each shot.",
+                "count": 10
+            },
+            {
+                "character": "Roman",
+                "score": "useless",
+                "description": "Roman fires on Sun. Both he and Blake dodge the shot.",
+                "count": 1
+            },
+            {
+                "character": "Sun",
+                "score": "useless",
+                "description": "The gunchucks are really cool, but they never do anything.",
+                "count": 18
+            },
+            {
+                "character": "Roman",
+                "score": "utility",
+                "description": "Roman shoots a rope holding a shipping container, causing it to fall.",
+                "count": 1
+            },
+            {
+                "character": "Roman",
+                "score": "useful",
+                "description": "While she's distracted by Penny, Roman takes a shot at Ruby.",
+                "count": 1
+            },
+            {
+                "character": "WF Bullhead",
+                "score": "useless",
+                "description": "It's multiple bullheads, but they're firing gatling guns at Penny.",
+                "count": 99,
+                "exclusive": true
+            },
+            {
+                "character": "Penny",
+                "score": "useful",
+                "description": "Her single charge shot is able to split into multiple projectiles, downing two bullheads.",
+                "count": 1
+            }
+        ]
+    },
+    "Volume 2": {
+        "Chapter 1": [],
+        "Chapter 2": [],
+        "Chapter 3": [],
+        "Chapter 4": [
+            {
+                "character": "Blake",
+                "score": "utility",
+                "description": "At the White Fang rally, Blake uses Gambol Shroud's pistol form to shoot out the breaker, turning off the lights.",
+                "count": 1
+            },
+            {
+                "character": "Neptune",
+                "score": "useless",
+                "description": "During the highway chase, Neptune uses his gun to slightly unbalance Torchwick's paladin, but nothing really comes of it.",
+                "count": 4
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses C.R. to propel herself backward as the fight starts.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Freezerburn!",
+                "count": 1
+            },
+            {
+                "character": "WF Paladin",
+                "score": "useless",
+                "description": "Roman tries to shoot at Team RWBY, but all of his attacks miss.",
+                "count": 18
+            },
+            {
+                "character": "WF Paladin",
+                "score": "useful",
+                "description": "Okay, a couple of them hit Weiss.",
+                "count": 2
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ladybug!",
+                "count": 2
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "Yang simply punches the cockpit of the paladin.",
+                "count": 6
+            },
+            {
+                "character": "Yang*",
+                "score": "useful",
+                "description": "Yang simply punches the cockpit of the paladin.",
+                "count": 2
+            },
+            {
+                "character": "Yang*",
+                "score": "utility",
+                "description": "She uses E.C. to propel herself through the air (Bumblebee!)",
+                "count": 3
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "Ice Flower! : Crescent Roses's shots through Weiss's glyphs manage to slow down the paladin.",
+                "count": 5
+            },
+            {
+                "character": "Yang*",
+                "score": "useless",
+                "description": "She tries to get the final hit on Torchwick, but it's blocked by Neo. Her next hit shatters Neo's illusion.",
+                "count": 2
+            }
+        ],
+        "Chapter 5": [
+            {
+                "character": "Pyrrha",
+                "score": "useless",
+                "description": "Pyrrha's shots (rifle and javelin forms) are easily blocked by Russell and Cardin.",
+                "count": 9
+            },
+            {
+                "character": "Pyrrha",
+                "score": "useful",
+                "description": "Pyrrha vs. Team CRDL",
+                "count": 2
+            },
+            {
+                "character": "Dove",
+                "score": "useless",
+                "description": "Dove's shots are negated by Pyrrha's shield.",
+                "count": 7
+            },
+            {
+                "character": "Mercury",
+                "score": "useless",
+                "description": "Mercury vs. Pyrrha",
+                "count": 1
+            },
+            {
+                "character": "Mercury",
+                "score": "utility",
+                "description": "Mercury uses the recoil from the shot to push himself off of Pyrrha's shield as she rushes towards him.",
+                "count": 1
+            }
+        ],
+        "Chapter 6": [],
+        "Chapter 7": [
+            {
+                "character": "human soldier",
+                "score": "useless",
+                "description": "As Cinder is infiltrating Beacon's CCT Tower, the guard's aim is simply horrendous, hitting the ground near Cinder's feet and posing no real threat.",
+                "count": 3
+            },
+            {
+                "character": "Cinder",
+                "score": "useful",
+                "description": "...It's technically a guard's weapon, but she makes him fire it at another guard, killing him.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Cinder is able to easily block Ruby's shots with her hand/Aura.",
+                "count": 7
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses C.R. to propel herself towards Cinder.",
+                "count": 1
+            },
+            {
+                "character": "Cinder",
+                "score": "useless",
+                "description": "Cinder fires three arrows at once, causing a small explosion where they land.",
+                "count": 3,
+                "bow": true,
+                "exclusive": true
+            }
+        ],
+        "Chapter 8": [],
+        "Chapter 9": [
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "In the first fight against the Grimm, we see Yang fire three times, killing three Grimm.",
+                "count": 3
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "In the first fight against the Grimm, Ruby fires Crescent Rose six times to no visible effect before going in with the scythe form.",
+                "count": 6
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses C.R. to rush forward into the pack.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "Right before she's asked why she wants to be a huntress, we see her shoot three rounds into a Grimm.",
+                "count": 3
+            },
+            {
+                "character": "Blake",
+                "score": "useful",
+                "description": "Blake shoots up into the sky, killing a bunch of small Nevermores.",
+                "count": 8
+            }
+        ],
+        "Chapter 10": [],
+        "Chapter 11": [
+            {
+                "character": "Roman",
+                "score": "utility",
+                "description": "Roman fires the handle part of his cane, using the hook to catch Ruby.",
+                "count": 1
+            },
+            {
+                "character": "WF member",
+                "score": "useless",
+                "description": "One of the WF members fires on the rest of team RWBY as they enter the cave. There's no sign of them being hit.",
+                "count": 7,
+                "exclusive": true
+            },
+            {
+                "character": "Roman",
+                "score": "useless",
+                "description": "Roman and four other WF members fire on Ruby as she runs away. None of them hit her.",
+                "count": 6
+            },
+            {
+                "character": "WF member",
+                "score": "useless",
+                "description": "Roman and four other WF members fire on Ruby as she runs away. None of them hit her.",
+                "count": 24,
+                "exclusive": true
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "A few WF members are in Ruby's way, but Yang takes out all of them with a single shot.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "Fighting on top of the train",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses Crescent Rose to propel herself forward, into a bunch of WF members.",
+                "count": 2
+            },
+            {
+                "character": "WF Paladin",
+                "score": "useless",
+                "description": "Right before Zwei hits it, we see the paladin fire off a few shots.",
+                "count": 7,
+                "exclusive": true
+            },
+            {
+                "character": "Oobleck",
+                "score": "useful",
+                "description": "Oobleck's weapon is pretty effective against the paladins.",
+                "count": 6
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "Yang vs. Neo",
+                "count": 9
+            },
+            {
+                "character": "Roman",
+                "score": "useless",
+                "description": "Effective against Blake's clone, but... that's not Blake.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "Ruby and Oobleck both fire at the legs of a paladin, knocking it over.",
+                "count": 1
+            },
+            {
+                "character": "Oobleck",
+                "score": "useful",
+                "description": "Ruby and Oobleck both fire at the legs of a paladin, knocking it over.",
+                "count": 2
+            }
+        ],
+        "Chapter 12": [
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "Yang shoots a bunch of Grimm as she propels herself up and backward.",
+                "count": 10
+            },
+            {
+                "character": "Blake",
+                "score": "useful",
+                "description": "Blake uses Gambol Shroud's pistol form to take out a few Ursai.",
+                "count": 7
+            },
+            {
+                "character": "Nora",
+                "score": "utility",
+                "description": "Nora uses Magnhild's abilities to fly through the air.",
+                "count": 2
+            },
+            {
+                "character": "Atlesian Airship",
+                "score": "useful",
+                "description": "The guns on the airship mow down an Ursa pretty effectively.",
+                "count": 13,
+                "exclusive": true
+            },
+            {
+                "character": "AK-200",
+                "score": "useless",
+                "description": "The AK-200s are pretty damn useless against the Grimm.",
+                "count": 56,
+                "exclusive": true
+            },
+            {
+                "character": "AK-200",
+                "score": "useful",
+                "description": "Three AK-200s combine 34 bullets to take out one Ursa.",
+                "count": 34,
+                "exclusive": true
+            },
+            {
+                "character": "Mercury",
+                "score": "useful",
+                "description": "Merc takes out a Grimm with a single gun-kick.",
+                "count": 1
+            },
+            {
+                "character": "Emerald",
+                "score": "useful",
+                "description": "Emerald kills a few Ursai with her weapon in gun form...",
+                "count": 12
+            },
+            {
+                "character": "Coco",
+                "score": "useful",
+                "description": "Coco's minigun just wrecks everything. Assuming an 80% accuracy...",
+                "count": 50
+            },
+            {
+                "character": "Coco",
+                "score": "useless",
+                "description": "Coco's minigun just wrecks everything. At ~7 shots/s for 7s, and assuming a 90% accuracy...",
+                "count": 15
+            },
+            {
+                "character": "Oobleck",
+                "score": "useful",
+                "description": "Oobleck and Port kill a few Ursai with their weapons.",
+                "count": 1
+            },
+            {
+                "character": "Port",
+                "score": "useful",
+                "description": "Oobleck and Port kill a few Ursai with their weapons.",
+                "count": 1
+            }
+        ]
+    },
+    "Volume 3": {
+        "Chapter 1": [
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "In the opening scene of the RWBY/ABRN fight, we see Yang flip over using Ember Celica. It doesn't really accomplish anything, but...",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "Immediately after her flip, she fires two shots at a target offscreen. There's no indication of anything happening.",
+                "count": 2
+            },
+            {
+                "character": "Reese",
+                "score": "useless",
+                "description": "Reese's guns do absolutely nothing against Blake.",
+                "count": 5
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "Yang punches/shoots at Arslan, but nothing really comes of it.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "Ruby manages to freeze Nadir in place, saving Yang.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "Ruby uses Crescent Rose to push off of Bolin, sending him flying.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Yang uses the recoil from Ember Celica to help her chase down Arslan.",
+                "count": 2
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Yang propels herself with E.C. across Weiss's ice ramp, etc., as they finish the fight.",
+                "count": 8
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "Yang punches Arslan, Nadir, and Bolin, finishing the fight.",
+                "count": 1
+            },
+            {
+                "character": "Emerald",
+                "score": "useless",
+                "description": "In Emerald's flashback scene, we see Emerald and Mercury shooting a few bullets at offscreen targets with no indication that they do anything.",
+                "count": 6
+            },
+            {
+                "character": "Mercury",
+                "score": "useless",
+                "description": "In Emerald's flashback scene, we see Emerald and Mercury shooting a few bullets at offscreen targets with no indication that they do anything.",
+                "count": 1
+            }
+        ],
+        "Chapter 2": [
+            {
+                "character": "May",
+                "score": "utility",
+                "description": "May forces a retreat with her sniper rifle, although it probably wasn't necessary. Most of her shots are in scored as utility, since she seems to be concerned with suppression fire, rather than actually hitting anything.",
+                "count": 13
+            },
+            {
+                "character": "May",
+                "score": "useless",
+                "description": "May also tries shooting Ren and Nora as an actual offensive tactic.",
+                "count": 6
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Ren's guns do absolutely nothing against Nolan.",
+                "count": 12
+            },
+            {
+                "character": "Nora",
+                "score": "useless",
+                "description": "Magnhild destroys the trees around May, but May was able to dodge it due to the low speed.",
+                "count": 4
+            },
+            {
+                "character": "Neptune",
+                "score": "utility",
+                "description": "Neptune fires a single shot at Octavia, which she easily deflects, but it distracts her just long enough for Sun to attack her.",
+                "count": 1
+            },
+            {
+                "character": "Nebula",
+                "score": "utility",
+                "description": "Nebula fires her crossbow into the ship's mast then uses the arrow as a springboard to reach Scarlet.",
+                "count": 1
+            },
+            {
+                "character": "Scarlet",
+                "score": "utility",
+                "description": "Scarlet is able to fire his hook to catch Gwen, then use the rope as a pulley (pulling Gwen up and letting himself down).",
+                "count": 1
+            },
+            {
+                "character": "Nebula",
+                "score": "utility",
+                "description": "After Scarlet is knocked out, Gwen is still hanging upside down. Nebula is able to shoot the rope, freeing her.",
+                "count": 1
+            },
+            {
+                "character": "Neptune",
+                "score": "useful",
+                "description": "Neptune shoots Dew (finally doing something in this fight), sending her flying into the water.",
+                "count": 1
+            }
+        ],
+        "Chapter 3": [
+            {
+                "character": "Qrow",
+                "score": "useless",
+                "description": "Qrow misses Winter 8 times as she runs across the wall.",
+                "count": 8
+            }
+        ],
+        "Chapter 4": [
+            {
+                "character": "Coco",
+                "score": "utility",
+                "description": "Coco's gun clears the tall grass, I guess. Notice that it's firing pairs of bullets.",
+                "count": 140
+            },
+            {
+                "character": "Coco",
+                "score": "useless",
+                "description": "Her bullets hit the defensive shield protecting the spectators.",
+                "count": 16
+            },
+            {
+                "character": "Coco",
+                "score": "useless",
+                "description": "Coco can't hit Mercury.",
+                "count": 94
+            },
+            {
+                "character": "Mercury",
+                "score": "useless",
+                "description": "Merc fires two shots at C/Y.",
+                "count": 2
+            },
+            {
+                "character": "Mercury",
+                "score": "useless",
+                "description": "Merc's shots (where he breakdances and sends dozens of rounds flying) are enough to stagger Coco and Yatsu. (There's no good camera angle here, so we'll just assume 246 like the V3C6 fight.) This is ruled useless since Coco is shown at 70% Aura after this.",
+                "count": 246
+            },
+            {
+                "character": "Emerald",
+                "score": "utility",
+                "description": "Emerald manages to hook Coco, pulling her into the trees.",
+                "count": 1
+            },
+            {
+                "character": "Emerald",
+                "score": "useless",
+                "description": "Emerald and Coco trade ineffective shots.",
+                "count": 10
+            },
+            {
+                "character": "Coco",
+                "score": "useless",
+                "description": "Emerald and Coco trade ineffective shots.",
+                "count": 108
+            }
+        ],
+        "Chapter 5": [
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "Yang struggles against opponents she can't hit.",
+                "count": 12
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Shut up! Shut up! SHUT UP! (Yang propels herself at Neon)",
+                "count": 2
+            },
+            {
+                "character": "Yang*",
+                "score": "useless",
+                "description": "She shoots at Flynt and Neon, missing a few of her shots.",
+                "count": 16
+            },
+            {
+                "character": "Yang*",
+                "score": "utility",
+                "description": "She propels herself through Flynt's trumpet's pushback attack.",
+                "count": 11
+            },
+            {
+                "character": "Yang*",
+                "score": "useful",
+                "description": "She takes out Flynt and Neon.",
+                "count": 3
+            }
+        ],
+        "Chapter 6": [
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "Yang vs Mercury",
+                "count": 7
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "Yang vs Mercury",
+                "count": 13
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Yang vs Mercury",
+                "count": 2
+            },
+            {
+                "character": "Mercury",
+                "score": "utility",
+                "description": "Merc saves himself from ring-out.",
+                "count": 2
+            },
+            {
+                "character": "Mercury",
+                "score": "utility",
+                "description": "Merc's collections of way too many rounds is substantial against Yang (sending her to 16% Aura). Using this screenshot — https://imgur.com/a/Z6lYa92 — we see 123 rounds on screen. Approximating this as roughly half of the circle they're orbiting in, we get about 250 rounds.",
+                "count": 246
+            },
+            {
+                "character": "Yang*",
+                "score": "useful",
+                "description": "Yang takes out Mercury.",
+                "count": 9
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "Yang attacks a 'helpless' Mercury.",
+                "count": 1
+            }
+        ],
+        "Chapter 7": [
+            {
+                "character": "Emerald",
+                "score": "useless",
+                "description": "Emerald's shots are easily blocked by Amber's hand/Aura.",
+                "count": 6
+            },
+            {
+                "character": "Mercury",
+                "score": "utility",
+                "description": "Merc uses his gun boots to propel himself at Amber.",
+                "count": 2
+            },
+            {
+                "character": "Mercury",
+                "score": "useless",
+                "description": "Merc and Em shoot at Amber, and she doesn't even bother blocking them with her hand.",
+                "count": 1
+            },
+            {
+                "character": "Emerald",
+                "score": "useless",
+                "description": "Merc and Em shoot at Amber, and she doesn't even bother blocking them with her hand.",
+                "count": 8
+            },
+            {
+                "character": "Cinder",
+                "score": "useful",
+                "description": "Cinder shoots arrows that create an explosion after they land.",
+                "count": 3,
+                "bow": true,
+                "exclusive": true
+            },
+            {
+                "character": "Cinder",
+                "score": "useful",
+                "description": "Cinder shoots Amber in the back.",
+                "count": 1,
+                "bow": true,
+                "exclusive": true
+            }
+        ],
+        "Chapter 8": [],
+        "Chapter 9": [
+            {
+                "character": "Mercury",
+                "score": "utility",
+                "description": "Mercury shoots Ruby's Scroll out of her hand so that she can't call for help.",
+                "count": 1
+            },
+            {
+                "character": "Mercury",
+                "score": "useless",
+                "description": "Mercury fires a shot at Ruby that she manages to duck under.",
+                "count": 1
+            },
+            {
+                "character": "Penny",
+                "score": "useless",
+                "description": "Penny's swords shoot laser beams at Pyrrha, which she dodges.",
+                "count": 9
+            },
+            {
+                "character": "Penny",
+                "score": "utility",
+                "description": "Penny uses what look to be the same lazers to propel herself forward.",
+                "count": 4
+            },
+            {
+                "character": "Penny",
+                "score": "useful",
+                "description": "Penny manages to hit Pyrrha with her lazers.",
+                "count": 2
+            },
+            {
+                "character": "Atlesian Airship",
+                "score": "useful",
+                "description": "Blue Two's laser guns shoot down Blue Three/Four (which crashes into the other one).",
+                "count": 3
+            }
+        ],
+        "Chapter 10": [
+            {
+                "character": "Nora",
+                "score": "useful",
+                "description": "Nora slams Magnhild into the head of the Nevermore.",
+                "count": 1
+            },
+            {
+                "character": "Port",
+                "score": "useful",
+                "description": "Port takes a single shot at a Griffon.",
+                "count": 1
+            },
+            {
+                "character": "AK-200",
+                "score": "useful",
+                "description": "It takes 8 shots, but it does kill the Grimm.",
+                "count": 8,
+                "exclusive": true
+            },
+            {
+                "character": "AK-200",
+                "score": "useless",
+                "description": "An AK-200 ineffectively shoots at an Ursa.",
+                "count": 9,
+                "exclusive": true
+            },
+            {
+                "character": "Ironwood",
+                "score": "useful",
+                "description": "I mean... it does take a lot of shots, but he does eventually kill the Alpha Beowulf.",
+                "count": 7,
+                "exclusive": true
+            },
+            {
+                "character": "Ironwood",
+                "score": "useful",
+                "description": "This time, he kills an Ursa with a single shot as it approaches behind the students.",
+                "count": 1,
+                "exclusive": true
+            },
+            {
+                "character": "AK-200",
+                "score": "useless",
+                "description": "A group of AK-200 are firing at things offscreen. There's no indication that they do anything.",
+                "count": 14,
+                "exclusive": true
+            },
+            {
+                "character": "AK-200",
+                "score": "useless",
+                "description": "A group of AK-200 can't hit Weiss and Blake as they lay, stationary, on the ground.",
+                "count": 15,
+                "exclusive": true
+            },
+            {
+                "character": "AK-200",
+                "score": "useless",
+                "description": "A _large_ group of AK-200 are absolutely useless against Weiss. <This count is approximate.>",
+                "count": 60,
+                "exclusive": true
+            },
+            {
+                "character": "human soldier",
+                "score": "useless",
+                "description": "Look, I know it's an AP-290, but still.",
+                "count": 8,
+                "exclusive": true
+            },
+            {
+                "character": "Coco",
+                "score": "useless",
+                "description": "Despite her success in V2C12 'Breach', Coco's gun can't take out a single Ursa here.",
+                "count": 17
+            },
+            {
+                "character": "Nora",
+                "score": "useless",
+                "description": "Nora fails to kill an Ursa.",
+                "count": 1
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Nope, Ren can't kill this Ursa with his gun.",
+                "count": 5
+            },
+            {
+                "character": "human soldier",
+                "score": "useless",
+                "description": "A group of 12 soldiers are firing on a King Taijitsu, to no effect, on Ozpin's monitor.",
+                "count": 84,
+                "exclusive": true
+            }
+        ],
+        "Chapter 11": [
+            {
+                "character": "Adam",
+                "score": "useful",
+                "description": "Adam kills an Ursa with a single shot before it can attack Blake.",
+                "count": 1
+            },
+            {
+                "character": "Nadir",
+                "score": "useless",
+                "description": "Nadir and an AK-200 fire on a Griffon, to no avail.",
+                "count": 4
+            },
+            {
+                "character": "AK-200",
+                "score": "useless",
+                "description": "Nadir and an AK-200 fire on a Griffon, to no avail.",
+                "count": 2
+            },
+            {
+                "character": "Neptune",
+                "score": "useless",
+                "description": "Neptune tries shooting an AP-290, but it doesn't really do anything.",
+                "count": 4
+            },
+            {
+                "character": "AP-290",
+                "score": "useless",
+                "description": "It shoots at Neptune and Sun.",
+                "count": 3,
+                "exclusive": true
+            },
+            {
+                "character": "Ren",
+                "score": "useful",
+                "description": "Ren kills a few AK-200s with his gun.",
+                "count": 20
+            },
+            {
+                "character": "AP-290",
+                "score": "useless",
+                "description": "An AP-290 fires on Neon and Reese, but they dodge.",
+                "count": 7,
+                "exclusive": true
+            },
+            {
+                "character": "Coco",
+                "score": "useless",
+                "description": "Coco fires on an AP-290, but it doesn't really care.",
+                "count": 50
+            },
+            {
+                "character": "Neptune",
+                "score": "useless",
+                "description": "Neptune fires on an AP-290, but it doesn't really care.",
+                "count": 2
+            },
+            {
+                "character": "AP-290",
+                "score": "useless",
+                "description": "The AP-290 fires on Velvet, but she dodges, jumping up with Crescent Rose.",
+                "count": 1,
+                "exclusive": true
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "Velvet copies Ember Celica and fires at the AP-290.",
+                "count": 2
+            },
+            {
+                "character": "Coco",
+                "score": "useless",
+                "description": "Velvet summons a copy of Coco's minigun and fires on the AP-290. It's doesn't do much.",
+                "count": 46
+            },
+            {
+                "character": "Penny",
+                "score": "useful",
+                "description": "Velvet copies Penny's charge shot, which is pretty effective against the AP-290.",
+                "count": 1
+            },
+            {
+                "character": "Coco",
+                "score": "useless",
+                "description": "Coco, Neptune, Nadir, and Reese fire on the AP-290, but they don't accomplish much.",
+                "count": 70
+            },
+            {
+                "character": "Neptune",
+                "score": "useless",
+                "description": "Coco, Neptune, Nadir, and Reese fire on the AP-290, but they don't accomplish much.",
+                "count": 6
+            },
+            {
+                "character": "Reese",
+                "score": "useless",
+                "description": "Coco, Neptune, Nadir, and Reese fire on the AP-290, but they don't accomplish much.",
+                "count": 5
+            },
+            {
+                "character": "Nadir",
+                "score": "useless",
+                "description": "Coco, Neptune, Nadir, and Reese fire on the AP-290, but they don't accomplish much.",
+                "count": 3
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Ruby fires a shot at Neo, but it's just an illusion.",
+                "count": 1
+            },
+            {
+                "character": "Roman",
+                "score": "useful",
+                "description": "Roman, from behind Neo's illusion, shoots Ruby, sending her flying.",
+                "count": 1
+            },
+            {
+                "character": "Roman",
+                "score": "useless",
+                "description": "Roman tries to shoot Ruby, but she pushes his cane, redirecting the shot.",
+                "count": 1
+            },
+            {
+                "character": "Roman",
+                "score": "useful",
+                "description": "Roman and Neo combo Ruby, and Roman shoots her. The problem is that this sends her into Crescent Rose, enabling her to stay on the airship.",
+                "count": 1
+            },
+            {
+                "character": "Roman",
+                "score": "useful",
+                "description": "Roman fires one shot, then is able to spread it out into an arc by swinging his cane. It leads to some great follow-ups on Ruby.",
+                "count": 2
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses Crescent Rose to pogo down from the airship.",
+                "count": 3
+            },
+            {
+                "character": "Qrow",
+                "score": "useful",
+                "description": "Qrow kills an Ursa with a single shot from Harbinger.",
+                "count": 1
+            },
+            {
+                "character": "Ironwood",
+                "score": "useful",
+                "description": "Ironwood kills a few AK-200s, saving Cardin.",
+                "count": 9
+            },
+            {
+                "character": "Blake",
+                "score": "useless",
+                "description": "Blake takes a couple of shots at Adam, but he just absorbs them with Wilt.",
+                "count": 2
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "As she looks for Blake, she shoots an AK-200.",
+                "count": 1
+            },
+            {
+                "character": "Cinder",
+                "score": "useful",
+                "description": "Cinder shoots Amber... again.",
+                "count": 1,
+                "bow": true,
+                "exclusive": true
+            },
+            {
+                "character": "Yang*",
+                "score": "utility",
+                "description": "She throws herself at Adam.",
+                "count": 2
+            }
+        ],
+        "Chapter 12": [
+            {
+                "character": "Cinder",
+                "score": "useful",
+                "description": "Cinder vs. Pyrrha atop Beacon Tower.",
+                "count": 2,
+                "exclusive": true,
+                "bow": true
+            }
+        ]
+    },
+    "Volume 4": {
+        "Ruby CS": [
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "Ruby kills the Nevermore she's riding on.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "Ruby uses her Semblance to get behind a Beowulf, then shoots it in the back of the head. The recoil sends her up, into a Nevermore.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Against the Beringel, Ruby fires a half-dozen shots, none of which do anything useful.",
+                "count": 7
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Yep. Still not doing anything.",
+                "count": 4
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby lands (upside down) just short of the Grimm she's attacking, then uses Crescent Rose's recoil to flip behind it.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby is able to knock down the Grimm with a shot before using her Semblance to send it into the air.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "Ruby kills the Grimm with a shot from Crescent Rose.",
+                "count": 1
+            }
+        ],
+        "Chapter 1": [
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Ruby fires a few shots at the Geist. Come on, the thing is made of rock.",
+                "count": 4
+            },
+            {
+                "character": "Nora",
+                "score": "utility",
+                "description": "Nora uses Magnhild to float up into the trees.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Ruby is still struggling against the Geist.",
+                "count": 1
+            },
+            {
+                "character": "Nora",
+                "score": "utility",
+                "description": "Nora manages to stagger the Geist, but it still doesn't do much other than draw its attention from Ruby.",
+                "count": 4
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Ren's shots do just about nothing to the Geist.",
+                "count": 22
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Even with lightning Dust, she still doesn't do anything.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Even when the Geist is using a tree for its arm, Ruby can't do anything to it... with FIRE Dust.",
+                "count": 1
+            },
+            {
+                "character": "Ren",
+                "score": "utility",
+                "description": "Apparently StormFlower can act as a boomerang?",
+                "count": 1
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Ren's guns don't do any damage, but... I suppose the goal was to just get the Geist's attention?",
+                "count": 8
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Seriously. Why do they keep firing at the Geist?",
+                "count": 4
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses Crescent Rose to speed up her descent, then to pogo towards Jaune.",
+                "count": 2
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "She does kill the Geist once Nora gets rid of its rock armor.",
+                "count": 1
+            }
+        ],
+        "Chapter 2": [],
+        "Chapter 3": [
+            {
+                "character": "Blake",
+                "score": "useless",
+                "description": "Blake fires a few shots from above the Sea Feilong, though... it doesn't do anything.",
+                "count": 5
+            },
+            {
+                "character": "ship",
+                "score": "useless",
+                "description": "Even the cannons don't do much to the Sea Feilong. The heavy cannon shots are dodged.",
+                "count": 11,
+                "exclusive": true
+            },
+            {
+                "character": "ship",
+                "score": "useful",
+                "description": "I mean, it's a cannon, not a gun, but it DOES kill the Sea Feilong.",
+                "count": 1,
+                "exclusive": true
+            }
+        ],
+        "Chapter 4": [
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "In her nightmare, Yang fires a few shots at Adam.",
+                "count": 5
+            }
+        ],
+        "Chapter 5": [],
+        "Chapter 6": [
+            {
+                "character": "Ironwood",
+                "score": "useful",
+                "description": "With a single shot, Ironwood kills Weiss's summoned Boarbatusk.",
+                "count": 1,
+                "exclusive": true
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Ren, overwhelmed, shoots a few bullets at Tyrian to no effect.",
+                "count": 3
+            },
+            {
+                "character": "Ren",
+                "score": "utility",
+                "description": "Ren doesn't do any damage, but the goal was to simply force Tyrian to retreat for a moment.",
+                "count": 4
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "With lightning Dust, she's able to shoot Nora to power her up.",
+                "count": 1
+            }
+        ],
+        "Chapter 7": [
+            {
+                "character": "Tyrian",
+                "score": "utility",
+                "description": "Maybe some use in forcing Qrow off of him, but still. The shots right after that don't do anything, and Qrow is easily able to block them by spinning Harbinger.",
+                "count": 12
+            },
+            {
+                "character": "Tyrian",
+                "score": "useless",
+                "description": "Okay, now he's not doing anything to Qrow.",
+                "count": 58
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "She uses Crescent Rose to hop onto a building as a sniping perch. She could have used her Semblance, though.",
+                "count": 1
+            },
+            {
+                "character": "Tyrian",
+                "score": "useless",
+                "description": "still shooting at Qrow. still doesn't do anything.",
+                "count": 19
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "Tyrian is able to block Ruby's shots with his tail without even looking.",
+                "count": 12
+            },
+            {
+                "character": "Tyrian",
+                "score": "useless",
+                "description": "Qrow's blocking looks really cool, but it doesn't hurt him.",
+                "count": 32
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Again, it looks cool when she uses Crescent Rose to slide, then pogo, down the building, but she could have just jumped.",
+                "count": 2
+            },
+            {
+                "character": "Tyrian",
+                "score": "useless",
+                "description": "Tyrian fires three quick rounds at Ruby, and it's not even obvious that he does it. She was blocking his melee attacks in the same sequence.",
+                "count": 3
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "She uses a shot from Crescent Rose to cut off Tyrian's stinger.",
+                "count": 1
+            }
+        ],
+        "Chapter 8": [],
+        "Chapter 9": [],
+        "Chapter 10": [
+            {
+                "character": "Li Ren",
+                "score": "useless",
+                "description": "Li shoots a few arrows at the Nuckelavee.",
+                "count": 3,
+                "exclusive": true,
+                "bow": true
+            }
+        ],
+        "Chapter 11": [],
+        "Chapter 12": [
+            {
+                "character": "Nora",
+                "score": "utility",
+                "description": "It gets the Nuckelavee's attention, but it doesn't really do much else.",
+                "count": 3
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "While Jaune moves Qrow, we can hear Crescent Rose being fired. There's no indication that Ruby's managed to do anything.",
+                "count": 14
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses Crescent Rose to pogo into the air to launch an attack. She gets knocked down, but that's not the point.",
+                "count": 1
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Ren fires at the Nuckelavee, but it isn't phased by the attack.",
+                "count": 28
+            },
+            {
+                "character": "Nora",
+                "score": "utility",
+                "description": "Serves as a distraction.",
+                "count": 1
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "As they circle the Nuckelavee, Ren, Nora, and Ruby all fire to no effect.",
+                "count": 30
+            },
+            {
+                "character": "Nora",
+                "score": "useless",
+                "description": "As they circle the Nuckelavee, Ren, Nora, and Ruby all fire to no effect.",
+                "count": 3
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "As they circle the Nuckelavee, Ren, Nora, and Ruby all fire to no effect. Ruby continues firing after this... still not doing anything.",
+                "count": 5
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "While Ruby and Jaune are on camera, we hear Ren's and Nora's weapons firing.",
+                "count": 22
+            },
+            {
+                "character": "Nora",
+                "score": "useless",
+                "description": "While Ruby and Jaune are on camera, we hear Ren's and Nora's weapons firing.",
+                "count": 2
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "After Jaune pulls out his upgraded sword, Ruby fires on the Nuckelavee.",
+                "count": 5
+            },
+            {
+                "character": "Ren",
+                "score": "utility",
+                "description": "Ren fires from a tree to get the Nuckelavee's attention.",
+                "count": 16
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Use the recoil from Crescent Rose to fire Nora through the air.",
+                "count": 1
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "Even with StormFlower embedded in the Nuckelavee's arm, the bullets don't do anything to release him from the Nuckelavee's grasp.",
+                "count": 8
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "She fires a few shots at the Nuckelavee that don't do anything.",
+                "count": 10
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses the shots from Crescent Rose to propel herself backward onto a building.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "We hear Crescent Rose firing in the background while Ren and Nora talk under a building, but there's no indication that this accomplishes anything.",
+                "count": 3
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Ruby uses her shots to both distract the Nuckelavee and to propel herself through the air.",
+                "count": 13
+            }
+        ]
+    },
+    "Volume 5": {
+        "Weiss CS": [],
+        "Blake CS": [
+            {
+                "character": "Ilia's Associate",
+                "score": "useless",
+                "description": "A few shots bounce off of Gambol Shroud; a few simply miss Blake and Sun altogether.",
+                "count": 3
+            },
+            {
+                "character": "Ilia's Associate",
+                "score": "useless",
+                "description": "He shoots a few more shots before he runs out of ammo. Sun and Blake are offscreen, but there's no indication that the bullets did anything.",
+                "count": 3
+            },
+            {
+                "character": "Ilia",
+                "score": "utility",
+                "description": "She shoots a rope holding a few boxes, buying herself a few seconds to escape.",
+                "count": 1
+            }
+        ],
+        "Yang CS": [
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She launches herself forward into the Ursa.",
+                "count": 2
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "She fires a single shot at the Ursa, but it doesn't really care.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "With two powerful shots, she's able to attract the attention of the Ursa.",
+                "count": 2
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She's able to use the recoil from Ember Celica to move around quickly, sliding under the Ursa, etc., to a level we don't normally see from her.",
+                "count": 3
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "She fires uselessly at the Ursa.",
+                "count": 6
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Yang uses the recoil from E.C. to propel herself forward.",
+                "count": 8
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "",
+                "count": 3
+            },
+            {
+                "character": "Yang*",
+                "score": "utility",
+                "description": "Yang propels herself at the Ursa.",
+                "count": 2
+            }
+        ],
+        "Chapter 1": [],
+        "Chapter 2": [],
+        "Chapter 3": [],
+        "Chapter 4": [
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Fight vs Shay D. Mann and co.",
+                "count": 5
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "Fight vs Shay D. Mann and co.",
+                "count": 1
+            },
+            {
+                "character": "Branwen Bandits",
+                "score": "useless",
+                "description": "Fight against Yang.",
+                "count": 16
+            }
+        ],
+        "Chapter 5": [],
+        "Chapter 6": [],
+        "Chapter 7": [],
+        "Chapter 8": [
+            {
+                "character": "WF member",
+                "score": "useless",
+                "description": "Fight between two WF members and Kali + Menagerie guard",
+                "count": 57
+            },
+            {
+                "character": "WF member",
+                "score": "useful",
+                "description": "Fight between two WF members and Kali + Menagerie guard",
+                "count": 1
+            },
+            {
+                "character": "Menagerie Guard",
+                "score": "useless",
+                "description": "Fight between two WF members and Kali + Menagerie guard. The last two shots are taken by Kali.",
+                "count": 13
+            },
+            {
+                "character": "Menagerie Guard",
+                "score": "useful",
+                "description": "Fight between two WF members and Kali + Menagerie guard",
+                "count": 1
+            },
+            {
+                "character": "WF member",
+                "score": "useful",
+                "description": "Fennec, actually. He shoots a Menagerie guard in front of Ghira.",
+                "count": 1
+            }
+        ],
+        "Chapter 9": [
+            {
+                "character": "WF member",
+                "score": "useful",
+                "description": "Corsac, actually. He shoots at fireball at Ghira, breaking his Aura.",
+                "count": 1
+            },
+            {
+                "character": "WF member",
+                "score": "useless",
+                "description": "Corsac and Fennec. The each shoot at Blake, but miss.",
+                "count": 2
+            },
+            {
+                "character": "Blake",
+                "score": "utility",
+                "description": "She fires an ice Dust shot, activating her Semblance. Corsac's and Fennec's weapons are stuck in the ensuing block of ice.",
+                "count": 1
+            }
+        ],
+        "Chapter 10": [
+            {
+                "character": "Menagerie Guard",
+                "score": "useless",
+                "description": "Some of these shots are taken by Kali, but it's the guards' weapons.",
+                "count": 13
+            },
+            {
+                "character": "Blake",
+                "score": "useless",
+                "description": "Fight between Blake and Illia",
+                "count": 6
+            },
+            {
+                "character": "Blake",
+                "score": "utility",
+                "description": "With the fire Dust bullet, she's able to start the fire.",
+                "count": 1
+            },
+            {
+                "character": "Blake",
+                "score": "useless",
+                "description": "Fight between Blake and Ilia",
+                "count": 10
+            },
+            {
+                "character": "Blake",
+                "score": "utility",
+                "description": "With the ice Dust, she's able to freeze Ilia's weapon.",
+                "count": 9
+            },
+            {
+                "character": "WF member",
+                "score": "useful",
+                "description": "Fennec, actually. Unfortunately for him, he shoots at Corsac, knocking him out.",
+                "count": 1
+            },
+            {
+                "character": "Sun",
+                "score": "useless",
+                "description": "Sun vs Ilia: the gunchucks are cool.",
+                "count": 4
+            }
+        ],
+        "Chapter 11": [
+            {
+                "character": "Qrow",
+                "score": "useless",
+                "description": "He shoots at Raven's bird form.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "She uses C.R. to propel herself upward, but it dragged back down by Emerald's chains.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She throws herself at Mercury.",
+                "count": 2
+            },
+            {
+                "character": "Lionheart",
+                "score": "useless",
+                "description": "He fires at Oscar, who simply blocks it with his Aura.",
+                "count": 1
+            },
+            {
+                "character": "Vernal",
+                "score": "useless",
+                "description": "Amidst her throwing her weapons, she fires a few shots at Weiss.",
+                "count": 10
+            },
+            {
+                "character": "Emerald",
+                "score": "useless",
+                "description": "She shoots at Ruby.",
+                "count": 23
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "She fires, almost hitting Weiss.",
+                "count": 1
+            },
+            {
+                "character": "Vernal",
+                "score": "useful",
+                "description": "More lasers than anything else, but she breaks Weiss's Aura.",
+                "count": 4
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "She fires a few shots at Merc as Cinder looks on.",
+                "count": 3
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She fights Merc as Cinder looks on.",
+                "count": 1
+            },
+            {
+                "character": "Mercury",
+                "score": "utility",
+                "description": "He fights Yang as Cinder looks on.",
+                "count": 2
+            }
+        ],
+        "Chapter 12": [
+            {
+                "character": "Qrow",
+                "score": "utility",
+                "description": "He shoots Leo's weapon as Leo aims at Oscar.",
+                "count": 2
+            },
+            {
+                "character": "Lionheart",
+                "score": "useless",
+                "description": "He fires a few fireballs at Qrow.",
+                "count": 3
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "We hear E.C. shoot offscreen.",
+                "count": 1
+            },
+            {
+                "character": "Mercury",
+                "score": "utility",
+                "description": "He sets up a kick against Yang.",
+                "count": 1
+            },
+            {
+                "character": "Lionheart",
+                "score": "utility",
+                "description": "He shoots Oscar, distracting him, forcing Qrow to take a hit for him.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "She pogos over to Yang.",
+                "count": 1
+            }
+        ],
+        "Chapter 13": [
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "She propels herself at Mercury.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She propels herself at Emerald.",
+                "count": 3
+            },
+            {
+                "character": "Mercury",
+                "score": "utility",
+                "description": "He shoots C.R. from Ruby's hands.",
+                "count": 1
+            },
+            {
+                "character": "Hazel",
+                "score": "useful",
+                "description": "He shoots some lightning Dust energy at Ren.",
+                "count": 1
+            },
+            {
+                "character": "Lionheart",
+                "score": "useless",
+                "description": "He fires two fireball rocks at Ozpin, who blocks them with his cane.",
+                "count": 2
+            },
+            {
+                "character": "WF member",
+                "score": "useless",
+                "description": "\"Kill them!\" Y-Yeah... okay?",
+                "count": 42
+            },
+            {
+                "character": "Vernal",
+                "score": "utility",
+                "description": "More lasers. It's enough to buy Raven a moment to attack Cinder.",
+                "count": 2
+            }
+        ],
+        "Chapter 14": [
+            {
+                "character": "WF member",
+                "score": "useless",
+                "description": "A few WF members fire some guns at the episode opening.",
+                "count": 8
+            },
+            {
+                "character": "Sun",
+                "score": "useless",
+                "description": "Sun vs Adam",
+                "count": 3
+            },
+            {
+                "character": "Mercury",
+                "score": "useless",
+                "description": "As Blake enters Haven, we get an overview of the fight.",
+                "count": 5
+            },
+            {
+                "character": "Hazel",
+                "score": "useless",
+                "description": "He shoots fireballs out of his hands.",
+                "count": 5
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "I mean... it's StormFlower.",
+                "count": 16
+            },
+            {
+                "character": "Lionheart",
+                "score": "useful",
+                "description": "Combined with Hazel's fireballs, he's able to kill the Queen Lancer summon.",
+                "count": 1
+            },
+            {
+                "character": "Hazel",
+                "score": "useful",
+                "description": "He kills the Queen Lancer summon.",
+                "count": 2
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "She fires at Leo, breaking his Aura.",
+                "count": 1
+            }
+        ]
+    },
+    "Volume 6": {
+        "Adam CS": [
+            {
+                "character": "human supremacist",
+                "score": "useless",
+                "description": "",
+                "count": 106
+            },
+            {
+                "character": "human supremacist",
+                "score": "useful",
+                "description": "He hits Ghira, breaking his Aura.",
+                "count": 1
+            },
+            {
+                "character": "Adam",
+                "score": "useful",
+                "description": "Adam fires Wilt from Blush at one of the humans.",
+                "count": 1
+            },
+            {
+                "character": "AK-130",
+                "score": "useless",
+                "description": "Admittedly, this is an estimate. But it's 7-8 counts of ten from two AK-130s, each firing from two guns.",
+                "count": 250
+            },
+            {
+                "character": "AK-130",
+                "score": "useful",
+                "description": "Okay, they do knock out a WF member.",
+                "count": 1
+            },
+            {
+                "character": "Adam",
+                "score": "useful",
+                "description": "Fires Wilt from Blush at an AK-130.",
+                "count": 1
+            },
+            {
+                "character": "SDC security",
+                "score": "useless",
+                "description": "We see the SDC snowflake logo on their security uniforms.",
+                "count": 41
+            }
+        ],
+        "V6 Trailer": [
+            {
+                "character": "Nora",
+                "score": "useful",
+                "description": "Nora kills a Grimm.",
+                "count": 1
+            }
+        ]
+    }
+}
