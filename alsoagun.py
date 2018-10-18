@@ -7,11 +7,15 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 import numpy as np
 import pandas as pd
+import pathlib
 from pprint import pprint
 import re
 
 # a namedtuple designed for storing the point values for each category of bullet usage
 Weights = collections.namedtuple('Weights', ['useful', 'utility', 'useless'])
+
+# data file
+datafile = pathlib.Path('data') / 'itsalsoagun.json'
 
 def calculate_score(data: tuple, weights: tuple) -> float:
     """ Calculate the gun effectiveness score based on the number of useful, utility, and useless instances.
@@ -66,7 +70,7 @@ def map_colors(normalized_data):
 
 
 def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, combine_yang: bool, ignore_trailers: bool, bow: bool, compress: bool, weights: tuple):
-    r""" Parse rwby_data.json for the necessary data.
+    r""" Parse .json for the necessary data.
     :param `volumes`: list[str] determining which volumes' data to read
     :param `exclusive`: str ("exclusive" or "mixed" or "all"), determining which weapons to read
     :param `ignore`: list[str] determining which characters to ignore
@@ -81,7 +85,7 @@ def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, 
     ignore = [name.lower() for name in ignore]
     only = [name.lower() for name in only]
 
-    with open('itsalsoagun.json', 'r') as f:
+    with open(datafile, 'r') as f:
         raw = json.loads(f.read())
 
     # data_by_char of the form {
@@ -157,7 +161,7 @@ def get_character_agnostic_data(volumes: list, exclusive: str, ignore: list, onl
     ignore = [name.lower() for name in ignore]
     only = [name.lower() for name in only]
 
-    with open('itsalsoagun.json', 'r') as f:
+    with open(datafile, 'r') as f:
         raw = json.loads(f.read())
 
     res = collections.defaultdict(list)
@@ -304,7 +308,7 @@ def graph(data, labels, weights, yscale, savefile=None):
 
 
 def get_unfinished_data(volumes):
-    with open('itsalsoagun.json', 'r') as f:
+    with open(datafile, 'r') as f:
         data = json.loads(f.read())
 
     found = 0
