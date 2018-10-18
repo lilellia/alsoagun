@@ -30,16 +30,16 @@ def normalize(data: tuple, weights: tuple) -> float:
     """ Normalize a single data point into [0, 1] based on the total number of instances. """
     total = sum(data)
     score = calculate_score(data, weights)
-    
+
     m, M = min(weights), max(weights)
-    
+
     n = score / total if total else (m + M) / 2
     return (n - m) / (M - m)
 
 def dataframe_normalize(dataframe, weights):
     """ Normalize the 'score' column into [0, 1] by the total number of instances """
     m, M = min(weights), max(weights)
-    
+
     dataframe['normalize'] = dataframe['score'] / dataframe_total_instances(dataframe) if dataframe_total_instances else (m + M) / 2
     dataframe['normalize'] = (dataframe['normalize'] - m) / (M - m)       # shift from [m, M] to [0, 1]
 
@@ -83,7 +83,7 @@ def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, 
 
     with open('itsalsoagun.json', 'r') as f:
         raw = json.loads(f.read())
-    
+
     # data_by_char of the form {
     #   "Ruby": {
     #       "useful": 2,
@@ -93,7 +93,7 @@ def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, 
     #   "Weiss": ...
     # }
     data_by_char = collections.defaultdict(lambda: {'useful': 0, 'utility': 0, 'useless': 0})
-    
+
     # populate data_by_char from the .json file
     for volume, volume_data in raw.items():
         v = re.search(r'Volume (\d+)', volume).group(1)
@@ -110,7 +110,7 @@ def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, 
                 if (excl == 'mixed' and e) or (excl == 'exclusive' and not e):
                     # ignore this data point if exclusivity query doesn't match
                     continue
-                
+
                 if instance.get('bow') and not bow:
                     # ignore this data point if this is a bow attack and we don't care about those
                     continue
@@ -123,10 +123,10 @@ def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, 
 
                 if c.lower() in ignore:
                     continue
-                
+
                 if instance.get('count'):
                     data_by_char[c][s] += 1 if compress else instance['count']
-    
+
     # convert to dataframe
     df = pd.DataFrame(data_by_char).transpose().replace(np.nan, 0.0)
 
@@ -148,7 +148,7 @@ def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, 
     # replace "Ren" with "Lie Ren"
     if {'Ren', 'Li Ren'}.issubset(set(df.index.tolist())):
         df = df.replace('Ren', 'Lie Ren')
-    
+
     return df
 
 
@@ -156,10 +156,10 @@ def get_character_agnostic_data(volumes: list, exclusive: str, ignore: list, onl
     """ Get episode data. Parameters have the same meaning as in get_character_data(*) """
     ignore = [name.lower() for name in ignore]
     only = [name.lower() for name in only]
-    
+
     with open('itsalsoagun.json', 'r') as f:
         raw = json.loads(f.read())
-    
+
     res = collections.defaultdict(list)
     for volume, volume_data in raw.items():
         v = re.search('Volume (.+)', volume).group(1)
@@ -174,7 +174,7 @@ def get_character_agnostic_data(volumes: list, exclusive: str, ignore: list, onl
                     continue
                 c = '?'
                 label = chapter
-            
+
             instances = []
             for i in chapter_data:
                 if only and i['character'].lower() not in only:
@@ -195,7 +195,7 @@ def get_character_agnostic_data(volumes: list, exclusive: str, ignore: list, onl
             for inst in instances:
                 count = 1 if compress else inst.get('count', 0)
                 d[inst['score']] += count
-            
+
             useful = d['useful']
             utility = d['utility']
             useless = d['useless']
@@ -210,10 +210,10 @@ def get_character_agnostic_data(volumes: list, exclusive: str, ignore: list, onl
             res['score'].append(score)
             res['normalize'].append(normalized)
             res['label'].append(label)
-    
+
     # convert to dataframe
     df = pd.DataFrame(res)
-    
+
     # round normalize values
     df['normalize'] = round(df['normalize'], 3)
 
@@ -221,27 +221,28 @@ def get_character_agnostic_data(volumes: list, exclusive: str, ignore: list, onl
     cols = ['label', 'useless', 'utility', 'useful', 'score', 'normalize']
     return df[cols]
 
-def graph(data, labels, weights, yscale):
+def graph(data, labels, weights, yscale, savefile=None):
     n = len(data)
     indices = np.arange(n)
 
     # subplot layout
-    gs = mpl.gridspec.GridSpec(2, 5)
+    fig = mpl.pyplot.figure(figsize=(16.0, 14.0))
+    gs = mpl.gridspec.GridSpec(2, 5, figure=fig)
     gs.update(hspace=0.5, wspace=0)
 
     # Instance Count plot
     ax1 = plt.subplot(gs[0, :-1])
     ax1.set_yscale(yscale)
-    
+
     plt.xticks(indices, labels)
     for tick in ax1.xaxis.get_major_ticks():
         tick.label.set_rotation('vertical')
         tick.label.set_fontsize(8)
-    
+
     # adjusted useful shots
     ax1.scatter(indices, weights.useful * data.useful, color='#00a000', edgecolor='k', marker=7, s=100, label=f'Adj. Useful ({weights.useful:+})')
     ax1.axhline(y=sum(weights.useful * x for x in data.useful)/n, color='#00a000', linestyle='--')
-    
+
     # adjusted utility shots
     ax1.scatter(indices, weights.utility * data.utility, color='#ffa000', edgecolor='k', marker=5, s=100, label=f'Adj. Utility ({weights.utility:+})')
     ax1.axhline(y=sum(weights.utility * x for x in data.utility)/n, color='#ffa000', linestyle='--')
@@ -265,7 +266,7 @@ def graph(data, labels, weights, yscale):
     plot = ax2.scatter(data.normalize, data.normalize, c=data.normalize, cmap='Spectral')
     plt.colorbar(plot)
     plt.cla()
-    
+
     plt.xticks(indices, labels)
     for tick in ax2.xaxis.get_major_ticks():
         tick.label.set_rotation('vertical')
@@ -278,7 +279,7 @@ def graph(data, labels, weights, yscale):
     ax2.set_yscale(yscale)
 
     ax2.bar(indices, data.score, color=colors, edgecolor='k')           # Score plot
-    
+
     mean = sum(data.score) / len(data)
     ax2.axhline(y=mean, color='k', linestyle='--')
 
@@ -296,13 +297,16 @@ def graph(data, labels, weights, yscale):
     norm = total / sum(x) if sum(x) else (m + M) / 2
     ax3.text(1, 0, f'Total: {total}\nNormalized: {(norm-m)/(M-m):.2f}', horizontalalignment='right', verticalalignment='bottom', transform=ax3.transAxes)
 
-    plt.show()
+    if savefile:
+        plt.savefig(savefile, dpi=200)
+    else:
+        plt.show()
 
 
 def get_unfinished_data(volumes):
     with open('itsalsoagun.json', 'r') as f:
         data = json.loads(f.read())
-    
+
     found = 0
     episodes = []
     for vol, volume_data in data.items():
@@ -317,7 +321,7 @@ def get_unfinished_data(volumes):
                 print(f'\n{vol} {chp}')
                 pprint(unfinished)
                 found += len(unfinished)
-    
+
     print(f'\n{found} unfinished instance(s) found.')
     print(f'Episodes: {episodes}')
 
@@ -342,12 +346,13 @@ if __name__ == '__main__':
     parser.add_argument('-w', '--weights', dest='weights', nargs=3, type=float, default=[1.0, 0.5, -1.0], help="Set the weights of each category. They should be passed in as '-w USEFUL UTILITY USELESS'. [DEFAULT: 1.0 0.5 -1.0]")
     parser.add_argument('-s', '--scale', dest='yscale', default='symlog', help="Sets the y-axis scaling for the graph. Possible options include 'linear', 'log', 'logit' (logistic), 'symlog' (symmetric log). [DEFAULT: symlog]")
     parser.add_argument('--output', '--csv', dest='output', help="Output the data to a .csv file. Ignored if --verbose is not passed.")
+    parser.add_argument('--save', dest='savefile')
 
     exclusivity = parser.add_mutually_exclusive_group()
     exclusivity.add_argument('-a', '--all', action='store_true', default=True, help='Include all weapons (subject to -only and -ignore flags) [DEFAULT: True] Only one of -a, -m, and -e can be passed.')
     exclusivity.add_argument('-m', '--mixed', action='store_true', help="In addition to -only and -ignore flags, consider only those weapons which are not exclusively guns (e.g. Coco's minigun, but not Junior's men's machine guns). [DEFAULT: show all weapons] Only one of -a, -m, and -e can be passed.")
     exclusivity.add_argument('-e', '--exclusive', action='store_true', help="In addition to -only and -ignore flags, consider only those weapons which are exclusively guns. [DEFAULT: show all weapons] Only one of -a, -m, and -e can be passed. Bows are not counted unless -b is also passed.")
-    
+
     parser.add_argument('--todo', action='store_true')
 
     args = parser.parse_args()
@@ -383,23 +388,23 @@ if __name__ == '__main__':
             # graph episode data
             df = get_character_agnostic_data(**kwargs)
             labels = df.label
-            
+
         if args.verbose:
             print_full_dataframe(df)
             print()
 
             if args.output:
                 df.to_csv(args.output)
-            
+
         norm = normalize(
-            data=(sum(df['useful']), sum(df['utility']), sum(df['useless'])), 
+            data=(sum(df['useful']), sum(df['utility']), sum(df['useless'])),
             weights=Weights(*args.weights)
         )
-        
+
         r = 9 * norm + 1
         black_stars = '\u2605' * round(r/2)
         white_stars = '\u2606' * (5 - round(r/2))
         print(f'Rating: {r:.1f}/10 ({black_stars+white_stars})')
-            
+
         if not args.no_graph:
-            graph(df, labels, weights, args.yscale)
+            graph(df, labels, weights, args.yscale, args.savefile)
