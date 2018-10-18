@@ -16,21 +16,20 @@ if __name__ == '__main__':
 
     interpreter = pathlib.Path(sys.executable).name
 
-    t = tqdm.tqdm(total=len(options)+2)
+    with tqdm.tqdm(total=len(options)+2) as t:
+        # graphs
+        for option in options:
+            outfile = pathlib.Path() / 'graphs' / option.replace('-', '')
+            args = [interpreter, 'alsoagun.py'] + option.split(' ') + ['--save', outfile]
+            subprocess.run(args, capture_output=True)
+            t.update(1)
 
-    # graphs
-    for option in options:
-        outfile = pathlib.Path() / 'graphs' / option.replace('-', '')
-        args = [interpreter, 'alsoagun.py'] + option.split(' ') + ['--save', outfile]
-        subprocess.run(args, capture_output=True)
+        # .csv files
+        data = pathlib.Path() / 'data'
+        args = [interpreter, 'alsoagun.py', '--nograph', '--verbose', '--csv']
+
+        subprocess.run(args + [data / 'alsoagun_character_data.csv', '-c', '-cy'], capture_output=True)
         t.update(1)
 
-    # .csv files
-    args = [interpreter, 'alsoagun.py', '--nograph', '--verbose', '--csv']
-
-    subprocess.run(args + ['alsoagun_character_data.csv', '-c', '-cy'], capture_output=True)
-    t.update(1)
-
-    subprocess.run(args + ['alsoagun_episode_data.csv', '-a'], capture_output=True)
-    t.update(1)
-    t.close()
+        subprocess.run(args + [data / 'alsoagun_episode_data.csv', '-a'], capture_output=True)
+        t.update(1)
