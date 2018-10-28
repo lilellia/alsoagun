@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     interpreter = pathlib.Path(sys.executable).name
 
-    with tqdm.tqdm(total=len(options)+2) as t:
+    with tqdm.tqdm(total=len(options)+3) as t:
         # graphs
         for option in options:
             outfile = pathlib.Path() / 'graphs' / option.replace('-', '')
@@ -32,4 +32,9 @@ if __name__ == '__main__':
         t.update(1)
 
         subprocess.run(args + [data / 'alsoagun_episode_data.csv', '-a'], capture_output=True)
+        t.update(1)
+
+        # json file
+        args = [interpreter, 'makejson.py', pathlib.Path() / 'data' / 'itsalsoagun.json']
+        subprocess.run(args, capture_output=True)
         t.update(1)

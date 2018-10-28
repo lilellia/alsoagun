@@ -10,12 +10,14 @@ import pandas as pd
 import pathlib
 from pprint import pprint
 import re
+import sqlite3
+import sys
 
 # a namedtuple designed for storing the point values for each category of bullet usage
 Weights = collections.namedtuple('Weights', ['useful', 'utility', 'useless'])
 
 # data file
-datafile = pathlib.Path('data') / 'itsalsoagun.json'
+datafile = pathlib.Path('data') / 'alsoagun.sqlite3'
 
 def calculate_score(data: tuple, weights: tuple) -> float:
     """ Calculate the gun effectiveness score based on the number of useful, utility, and useless instances.
@@ -68,6 +70,13 @@ def map_colors(normalized_data):
         res.append(hexcolor(r, g, b))
     return res
 
+def get_raw_data():
+    conn = sqlite3.connect(datafile)
+    cur = conn.cursor()
+    raw = list(cur.execute('SELECT * FROM data'))
+    conn.close()
+
+    return raw
 
 def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, combine_yang: bool, ignore_trailers: bool, bow: bool, compress: bool, weights: tuple):
     r""" Parse .json for the necessary data.
@@ -85,8 +94,7 @@ def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, 
     ignore = [name.lower() for name in ignore]
     only = [name.lower() for name in only]
 
-    with open(datafile, 'r') as f:
-        raw = json.loads(f.read())
+    raw = get_raw_data()
 
     # data_by_char of the form {
     #   "Ruby": {
@@ -98,38 +106,29 @@ def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, 
     # }
     data_by_char = collections.defaultdict(lambda: {'useful': 0, 'utility': 0, 'useless': 0})
 
-    # populate data_by_char from the .json file
-    for volume, volume_data in raw.items():
-        v = re.search(r'Volume (\d+)', volume).group(1)
-        if v not in map(str, volumes):
+    # populate data_by_char from the database
+    for idx, vol, chp, char, score, desc, count, isexcl, isbow in raw:
+        vol = re.search(r'Volume (\d+)', vol).group(1)
+        if vol not in volumes:
             continue
-        for chapter, chapter_data in volume_data.items():
-            if ignore_trailers and re.match(r'Chapter \d+', chapter) is None:
-                continue
-            for instance in chapter_data:
-                c = instance['character']
-                s = instance['score']
-                e = instance.get('exclusive', False)
+        if ignore_trailers and re.match(r'Chapter \d+', chp) is None:
+            continue
+        if (exclusive == 'mixed' and isexcl) or (exclusive == 'exclusive' and not isexcl):
+            # ignore this data point if exclusivity query doesn't match
+            continue
+        if isbow and not bow:
+            # ignore if this is a bow attack and we're ignoring those
+            continue
 
-                if (excl == 'mixed' and e) or (excl == 'exclusive' and not e):
-                    # ignore this data point if exclusivity query doesn't match
-                    continue
+        if char == 'Yang*' and combine_yang:
+            char = 'Yang'
 
-                if instance.get('bow') and not bow:
-                    # ignore this data point if this is a bow attack and we don't care about those
-                    continue
+        if only and char.lower() not in only:
+            continue
+        if char.lower() in ignore:
+            continue
 
-                if c == 'Yang*' and combine_yang:
-                    c = 'Yang'
-
-                if only and c.lower() not in only:
-                    continue
-
-                if c.lower() in ignore:
-                    continue
-
-                if instance.get('count'):
-                    data_by_char[c][s] += 1 if compress else instance['count']
+        data_by_char[char][score] += 1 if compress else count
 
     # convert to dataframe
     df = pd.DataFrame(data_by_char).transpose().replace(np.nan, 0.0)
@@ -151,7 +150,9 @@ def get_character_data(volumes: list, exclusive: str, ignore: list, only: list, 
     # if "Ren" ['Lie Ren'---Team JNPR] and "Li Ren" [his father] are both in the data set,
     # replace "Ren" with "Lie Ren"
     if {'Ren', 'Li Ren'}.issubset(set(df.index.tolist())):
-        df = df.replace('Ren', 'Lie Ren')
+        index_names = df.index.values
+        idx = list(index_names).index('Ren')
+        index_names[idx] = 'Lie Ren'
 
     return df
 
@@ -161,76 +162,57 @@ def get_character_agnostic_data(volumes: list, exclusive: str, ignore: list, onl
     ignore = [name.lower() for name in ignore]
     only = [name.lower() for name in only]
 
-    with open(datafile, 'r') as f:
-        raw = json.loads(f.read())
+    raw = get_raw_data()
 
-    res = collections.defaultdict(list)
-    for volume, volume_data in raw.items():
-        v = re.search('Volume (.+)', volume).group(1)
-        if v not in map(str, volumes):
+    df = pd.DataFrame(columns=['episode', 'useless', 'utility', 'useful', 'score', 'normalize'])
+
+    # populate res from the database
+    for idx, vol, chp, char, score, desc, count, isexcl, isbow in raw:
+        vol = re.search(r'Volume (\d+)', vol).group(1)
+        if vol not in volumes:
             continue
-        for chapter, chapter_data in volume_data.items():
-            if 'Chapter' in chapter:
-                c = re.search('Chapter (.+)', chapter).group(1)
-                label = f'V{v}C{c}'
-            else:
-                if ignore_trailers:
-                    continue
-                c = '?'
-                label = chapter
 
-            instances = []
-            for i in chapter_data:
-                if only and i['character'].lower() not in only:
-                    # ignore this data point if it's not a character we're isolating
-                    continue
-                if i['character'].lower() in ignore:
-                    # ignore this data point if it's a character we're ignoring
-                    continue
-                if (excl == 'mixed' and i.get('exclusive')) or (excl == 'exclusive' and not i.get('exclusive')):
-                    # ignore this data point if it's a weapon type (gun-exclusive or not) that we don't care about
-                    continue
-                if i.get('bow') and not bow:
-                    # ignore this data point if it's a bow attack and we're ignoring those
-                    continue
-                instances.append(i)
+        if 'Chapter' in chp:
+            c = re.search('Chapter (.+)', chp).group(1)
+            label = f'V{vol}C{c}'
+        else:
+            if ignore_trailers:
+                continue
+            c = '?'
+            label = chp
 
-            d = {'useful': 0, 'utility': 0, 'useless': 0}
-            for inst in instances:
-                count = 1 if compress else inst.get('count', 0)
-                d[inst['score']] += count
+        if only and char.lower() not in only:
+            continue
+        if char.lower() in ignore:
+            continue
+        if (exclusive == 'mixed' and isexcl) or (exclusive == 'exclusive' and not isexcl):
+            continue
+        if isbow and not bow:
+            continue
 
-            useful = d['useful']
-            utility = d['utility']
-            useless = d['useless']
-            score = calculate_score((useful, utility, useless), weights)
-            normalized = normalize((useful, utility, useless), weights)
+        if label not in list(df.episode):
+            # create new entry
+            df = df.append(dict(episode=label, useless=0, utility=0, useful=0, score=0, normalize=0), ignore_index=True)
 
-            res['volume'].append(v)
-            res['chapter'].append(c)
-            res['useful'].append(useful)
-            res['utility'].append(utility)
-            res['useless'].append(useless)
-            res['score'].append(score)
-            res['normalize'].append(normalized)
-            res['label'].append(label)
+        # update existing entry
+        df.loc[df.episode == label, score] += count
+        _, *counts, _, _ = df.loc[df.episode == label].values[0]
+        counts = list(reversed(counts))
 
-    # convert to dataframe
-    df = pd.DataFrame(res)
+        df.loc[df.episode == label, 'score'] = calculate_score(counts, weights)
+        df.loc[df.episode == label, 'normalize'] = round(normalize(counts, weights), 3)
 
-    # round normalize values
-    df['normalize'] = round(df['normalize'], 3)
+    df['normalize'] = df['normalize'].astype(float)
+    return df
 
-    # reorder columns
-    cols = ['label', 'useless', 'utility', 'useful', 'score', 'normalize']
-    return df[cols]
-
-def graph(data, labels, weights, yscale, savefile=None):
+def graph(data, labels, weights, yscale, figtitle='', savefile=None):
     n = len(data)
     indices = np.arange(n)
 
     # subplot layout
     fig = mpl.pyplot.figure(figsize=(16.0, 14.0))
+    fig.suptitle(figtitle, fontstyle='italic')
+
     gs = mpl.gridspec.GridSpec(2, 5, figure=fig)
     gs.update(hspace=0.5, wspace=0)
 
@@ -241,7 +223,7 @@ def graph(data, labels, weights, yscale, savefile=None):
     plt.xticks(indices, labels)
     for tick in ax1.xaxis.get_major_ticks():
         tick.label.set_rotation('vertical')
-        tick.label.set_fontsize(8)
+        tick.label.set_fontsize(6)
 
     # adjusted useful shots
     ax1.scatter(indices, weights.useful * data.useful, color='#00a000', edgecolor='k', marker=7, s=100, label=f'Adj. Useful ({weights.useful:+})')
@@ -274,7 +256,7 @@ def graph(data, labels, weights, yscale, savefile=None):
     plt.xticks(indices, labels)
     for tick in ax2.xaxis.get_major_ticks():
         tick.label.set_rotation('vertical')
-        tick.label.set_fontsize(8)
+        tick.label.set_fontsize(6)
 
     ax2.set_title('Gun/Bullet Usefulness Score\nBars colored by normalized value (see colorbar): 0.0 = "useless"; 1.0 = "useful"')
     ax2.axhline(y=0, color='k')
@@ -391,7 +373,7 @@ if __name__ == '__main__':
         else:
             # graph episode data
             df = get_character_agnostic_data(**kwargs)
-            labels = df.label
+            labels = df.episode
 
         if args.verbose:
             print_full_dataframe(df)
@@ -411,4 +393,5 @@ if __name__ == '__main__':
         print(f'Rating: {r:.1f}/10 ({black_stars+white_stars})')
 
         if not args.no_graph:
-            graph(df, labels, weights, args.yscale, args.savefile)
+            figtitle = 'Flags: ' + ' '.join(sys.argv[1:])
+            graph(df, labels, weights, args.yscale, figtitle, args.savefile)
