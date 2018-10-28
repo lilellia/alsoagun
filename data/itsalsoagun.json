@@ -5,8 +5,7 @@
                 "character": "Ruby",
                 "score": "useful",
                 "description": "This trailer has a length of 3:28, and only half of that is fighting. Despite that, there are ~35-40 gun shots, leading to ~35-40 dead Grimm.",
-                "count": 36,
-                "target": "Grimm"
+                "count": 36
             },
             {
                 "character": "Ruby",
@@ -15,7 +14,6 @@
                 "count": 11
             }
         ],
-        "\"White\"": [],
         "\"Black\"": [
             {
                 "character": "Adam",
@@ -167,9 +165,6 @@
                 "count": 5
             }
         ],
-        "Chapter 2": [],
-        "Chapter 3": [],
-        "Chapter 4": [],
         "Chapter 5": [
             {
                 "character": "Ruby",
@@ -195,8 +190,7 @@
                 "character": "Yang",
                 "score": "useful",
                 "description": "Yang is fighting two Ursai, which stagger significantly when hit.",
-                "count": 3,
-                "target": "Grimm"
+                "count": 3
             },
             {
                 "character": "Yang*",
@@ -208,25 +202,21 @@
                 "character": "Yang*",
                 "score": "useful",
                 "description": "\"You two couldn't hit the broad side of a b-\" [hair strand falls]",
-                "count": 12,
-                "target": "Grimm"
+                "count": 12
             },
             {
                 "character": "Ren",
                 "score": "useless",
                 "description": "During Pyrrha's explanation of Aura, Ren fights a King Taijitsu. He fires a few rounds, but it's his melee attacks that actually do stuff.",
-                "count": 42,
-                "target": "Grimm"
+                "count": 42
             }
         ],
-        "Chapter 7": [],
         "Chapter 8": [
             {
                 "character": "Nora",
                 "score": "useful",
                 "description": "Nora and Ren ride in on an Ursa. Nora shoots it in order to get it to go faster... but it dies, instead.",
-                "count": 1,
-                "target": "Grimm"
+                "count": 1
             },
             {
                 "character": "Ruby",
@@ -238,50 +228,43 @@
                 "character": "Ruby",
                 "score": "useless",
                 "description": "Crescent Rose's bullets don't do much against the Death Stalker.",
-                "count": 1,
-                "target": "Grimm"
+                "count": 1
             },
             {
                 "character": "Nora",
                 "score": "useful",
                 "description": "Nora's shots stagger the Nevermore.",
-                "count": 7,
-                "target": "Grimm"
+                "count": 7
             },
             {
                 "character": "Pyrrha",
                 "score": "useless",
                 "description": "Pyrrha fires on the Death Stalker as RWBY/JNPR walk over the bridge.",
-                "count": 5,
-                "target": "Grimm"
+                "count": 5
             },
             {
                 "character": "Ren",
                 "score": "useless",
                 "description": "Ren also fires on the Death Stalker.",
-                "count": 18,
-                "target": "Grimm"
+                "count": 18
             },
             {
                 "character": "Ruby",
                 "score": "useless",
                 "description": "Fires at the offscreen Nevermore. No indication of anything happening.",
-                "count": 2,
-                "target": "Grimm"
+                "count": 2
             },
             {
                 "character": "Pyrrha",
                 "score": "useless",
                 "description": "Pyrrha and Ren are still shooting at the Death Stalker.",
-                "count": 8,
-                "target": "Grimm"
+                "count": 8
             },
             {
                 "character": "Ren",
                 "score": "useless",
                 "description": "Pyrrha and Ren are still shooting at the Death Stalker.",
-                "count": 36,
-                "target": "Grimm"
+                "count": 36
             },
             {
                 "character": "Nora",
@@ -293,8 +276,7 @@
                 "character": "Yang",
                 "score": "useful",
                 "description": "I think it's Yang? As Blake falls, we see two shots hit the Nevermore.",
-                "count": 2,
-                "target": "Grimm"
+                "count": 2
             },
             {
                 "character": "Blake",
@@ -399,13 +381,6 @@
                 "count": 1
             }
         ],
-        "Chapter 9": [],
-        "Chapter 10": [],
-        "Chapter 11": [],
-        "Chapter 12": [],
-        "Chapter 13": [],
-        "Chapter 14": [],
-        "Chapter 15": [],
         "Chapter 16": [
             {
                 "character": "Roman",
@@ -459,9 +434,6 @@
         ]
     },
     "Volume 2": {
-        "Chapter 1": [],
-        "Chapter 2": [],
-        "Chapter 3": [],
         "Chapter 4": [
             {
                 "character": "Blake",
@@ -568,7 +540,6 @@
                 "count": 1
             }
         ],
-        "Chapter 6": [],
         "Chapter 7": [
             {
                 "character": "human soldier",
@@ -599,11 +570,10 @@
                 "score": "useless",
                 "description": "Cinder fires three arrows at once, causing a small explosion where they land.",
                 "count": 3,
-                "bow": true,
-                "exclusive": true
+                "exclusive": true,
+                "bow": true
             }
         ],
-        "Chapter 8": [],
         "Chapter 9": [
             {
                 "character": "Yang",
@@ -636,7 +606,6 @@
                 "count": 8
             }
         ],
-        "Chapter 10": [],
         "Chapter 11": [
             {
                 "character": "Roman",
@@ -1041,7 +1010,7 @@
             {
                 "character": "Mercury",
                 "score": "utility",
-                "description": "Merc's collections of way too many rounds is substantial against Yang (sending her to 16% Aura). Using this screenshot — https://imgur.com/a/Z6lYa92 — we see 123 rounds on screen. Approximating this as roughly half of the circle they're orbiting in, we get about 250 rounds.",
+                "description": "Merc's collections of way too many rounds is substantial against Yang (sending her to 16% Aura). Using this screenshot \u2014 https://imgur.com/a/Z6lYa92 \u2014 we see 123 rounds on screen. Approximating this as roughly half of the circle they're orbiting in, we get about 250 rounds.",
                 "count": 246
             },
             {
@@ -1087,19 +1056,18 @@
                 "score": "useful",
                 "description": "Cinder shoots arrows that create an explosion after they land.",
                 "count": 3,
-                "bow": true,
-                "exclusive": true
+                "exclusive": true,
+                "bow": true
             },
             {
                 "character": "Cinder",
                 "score": "useful",
                 "description": "Cinder shoots Amber in the back.",
                 "count": 1,
-                "bow": true,
-                "exclusive": true
+                "exclusive": true,
+                "bow": true
             }
         ],
-        "Chapter 8": [],
         "Chapter 9": [
             {
                 "character": "Mercury",
@@ -1404,8 +1372,8 @@
                 "score": "useful",
                 "description": "Cinder shoots Amber... again.",
                 "count": 1,
-                "bow": true,
-                "exclusive": true
+                "exclusive": true,
+                "bow": true
             },
             {
                 "character": "Yang*",
@@ -1544,7 +1512,6 @@
                 "count": 1
             }
         ],
-        "Chapter 2": [],
         "Chapter 3": [
             {
                 "character": "Blake",
@@ -1575,7 +1542,6 @@
                 "count": 5
             }
         ],
-        "Chapter 5": [],
         "Chapter 6": [
             {
                 "character": "Ironwood",
@@ -1659,8 +1625,6 @@
                 "count": 1
             }
         ],
-        "Chapter 8": [],
-        "Chapter 9": [],
         "Chapter 10": [
             {
                 "character": "Li Ren",
@@ -1671,7 +1635,6 @@
                 "bow": true
             }
         ],
-        "Chapter 11": [],
         "Chapter 12": [
             {
                 "character": "Nora",
@@ -1784,7 +1747,6 @@
         ]
     },
     "Volume 5": {
-        "Weiss CS": [],
         "Blake CS": [
             {
                 "character": "Ilia's Associate",
@@ -1855,9 +1817,6 @@
                 "count": 2
             }
         ],
-        "Chapter 1": [],
-        "Chapter 2": [],
-        "Chapter 3": [],
         "Chapter 4": [
             {
                 "character": "Yang",
@@ -1878,9 +1837,6 @@
                 "count": 16
             }
         ],
-        "Chapter 5": [],
-        "Chapter 6": [],
-        "Chapter 7": [],
         "Chapter 8": [
             {
                 "character": "WF member",
