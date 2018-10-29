@@ -40,3 +40,18 @@ Only one of the following may be passed:
 * `-a`, `--all` :: Include all weapons (subject to `-only` and `-ignore` flags) [DEFAULT: True]
 * `-m`, `--mixed` :: In addition to `-only` and `-ignore` flags, consider only those weapons which are not exclusively guns (e.g. Coco's minigun, but not Junior's men's machine guns). [DEFAULT: show all weapons]
 * `-e`, `--exclusive` :: In addition to `-only` and `-ignore` flags, consider only those weapons which are exclusively guns. [DEFAULT: show all weapons]
+
+## makejson.py
+
+This script is run to take the database file and automagically update the .json file. This allows consistent data being stored in both formats without having to manually place it twice.
+
+It should be called as:
+`$ python3 makejson.py JSON_OUTFILE`
+
+## update.py
+
+This script updates everything:
+
+* Generates new graphs (calls `python3 alsoagun.py` with several combinations of flags. See `./graphs/` to see these flags.)
+* Updates the CSV files (calls `python alsoagun.py --csv ./data/alsoagun_character_data.csv` and `python alsoagun.py --csv ./data/alsoagun_epsiode_data.csv`)
+* Updates the JSON file according to the database (calls `python3 makejson.py data/itsalsoagun.json`)
