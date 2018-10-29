@@ -73,7 +73,7 @@ def map_colors(normalized_data):
 def get_raw_data():
     conn = sqlite3.connect(datafile)
     cur = conn.cursor()
-    raw = list(cur.execute('SELECT * FROM data'))
+    raw = sorted(list(cur.execute('SELECT * FROM data')))
     conn.close()
 
     return raw
@@ -179,7 +179,7 @@ def get_character_agnostic_data(volumes: list, exclusive: str, ignore: list, onl
             if ignore_trailers:
                 continue
             c = '?'
-            label = chp
+            label = f'(V{vol}) {chp}'
 
         if only and char.lower() not in only:
             continue

@@ -4,12 +4,11 @@ import pathlib
 import sqlite3
 import sys
 
+import alsoagun
+
 if __name__ == '__main__':
     """ Update the json file from the database file. """
-    conn = sqlite3.connect(pathlib.Path('data') / 'alsoagun.sqlite3')
-    cur = conn.cursor()
-    records = list(cur.execute('SELECT * FROM data'))
-    conn.close()
+    records = alsoagun.get_raw_data()
 
     data = collections.defaultdict(lambda: collections.defaultdict(list))
     for _, vol, chp, char, score, desc, count, isexcl, isbow in records:

@@ -434,6 +434,14 @@
         ]
     },
     "Volume 2": {
+        "Intro": [
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "She fires a shot at Mercury",
+                "count": 1
+            }
+        ],
         "Chapter 4": [
             {
                 "character": "Blake",
@@ -768,6 +776,14 @@
         ]
     },
     "Volume 3": {
+        "Intro": [
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "She fires a shot at Merc.",
+                "count": 1
+            }
+        ],
         "Chapter 1": [
             {
                 "character": "Yang",
@@ -1438,6 +1454,20 @@
                 "count": 1
             }
         ],
+        "Intro": [
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "She uses the recoil to spin C.R. faster against Tyrian",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "She fires at Tyrian, but it doesn't do anything.",
+                "count": 1
+            }
+        ],
         "Chapter 1": [
             {
                 "character": "Ruby",
@@ -1817,6 +1847,20 @@
                 "count": 2
             }
         ],
+        "Intro": [
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "Against Mercury and when moving to the center, she fires a shot that propels her forward.",
+                "count": 2
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "She fires a few useless shots at Mercury.",
+                "count": 3
+            }
+        ],
         "Chapter 4": [
             {
                 "character": "Yang",
@@ -2184,6 +2228,32 @@
                 "character": "Nora",
                 "score": "useful",
                 "description": "Nora kills a Grimm.",
+                "count": 1
+            }
+        ],
+        "Intro": [
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "She fires at the Seeker(?) Grimm.",
+                "count": 2
+            },
+            {
+                "character": "Ruby",
+                "score": "utility",
+                "description": "Against the Seeker(?) Grimm, she uses the recoil from C.R. to escape.",
+                "count": 1
+            },
+            {
+                "character": "Qrow",
+                "score": "useless",
+                "description": "Qrow fires at a Grimm on top of the train.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She fires behind her, then slices forward on her back, using the recoil to propel herself.",
                 "count": 1
             }
         ]
