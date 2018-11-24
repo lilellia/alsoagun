@@ -2253,8 +2253,213 @@
             {
                 "character": "Yang",
                 "score": "utility",
-                "description": "She fires behind her, then slices forward on her back, using the recoil to propel herself.",
+                "description": "She fires behind her, then slides forward on her back, using the recoil to propel herself.",
                 "count": 1
+            }
+        ],
+        "Chapter 1": [
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "As the show opens, she fires five shots, none of which hit the target.",
+                "count": 5
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She propels herself into the Grimm, right after Blake throws Gambol Shroud.",
+                "count": 1
+            },
+            {
+                "character": "Argus Limited",
+                "score": "useless",
+                "description": "As JNR climbs on the train, we hear the turrets firing, though there's no indication that anything is hit.",
+                "count": 12,
+                "exclusive": true
+            },
+            {
+                "character": "Nora",
+                "score": "useful",
+                "description": "Her second shot manages to kill the Grimm.",
+                "count": 1
+            },
+            {
+                "character": "Nora",
+                "score": "useless",
+                "description": "Her other two shots... not so much.",
+                "count": 2
+            },
+            {
+                "character": "Nora",
+                "score": "utility",
+                "description": "As Ren swings her around, she fires Magnhild twice to speed up her spin. ...Although she could probably have just made the jump regardless.",
+                "count": 2
+            },
+            {
+                "character": "Ren",
+                "score": "useless",
+                "description": "As usual, StormFlower doesn't do much.",
+                "count": 12
+            },
+            {
+                "character": "Adam",
+                "score": "useful",
+                "description": "As the camera pans across the fallen WF members, we hear Wilt fire. Given the situation, it's safe to assume that it was useful.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "With the camera on Oscar, we hear Crescent Rose fire.",
+                "count": 4
+            },
+            {
+                "character": "Argus Limited",
+                "score": "useless",
+                "description": "With the camera on Oscar, we also hear the turrets fire.",
+                "count": 4,
+                "exclusive": true
+            },
+            {
+                "character": "Qrow",
+                "score": "useless",
+                "description": "He fires at the Grimm, but it's his sword that does the damage.",
+                "count": 1
+            },
+            {
+                "character": "Argus Limited",
+                "score": "useless",
+                "description": "As Dudley turns on the turrets, they fire a bunch of shots. Some hit, some don't.",
+                "count": 44,
+                "exclusive": true
+            },
+            {
+                "character": "Argus Limited",
+                "score": "useful",
+                "description": "As Dudley turns on the turrets, they fire a bunch of shots. Some hit, some don't.",
+                "count": 4,
+                "exclusive": true
+            },
+            {
+                "character": "Qrow",
+                "score": "useless",
+                "description": "As Oscar comes up to him, he fires off-screen.",
+                "count": 4
+            },
+            {
+                "character": "Dudley",
+                "score": "useless",
+                "description": "Throughout the scene, he fires as well.",
+                "count": 4,
+                "exclusive": true
+            },
+            {
+                "character": "Argus Limited",
+                "score": "useless",
+                "description": "Oscar tries to convince Dudley to turn off the turrets. As he does so, they're firing off-screen.",
+                "count": 18,
+                "exclusive": true
+            },
+            {
+                "character": "Argus Limited",
+                "score": "useful",
+                "description": "As Oscar tries to convince Dudley to turn off the turrets, they do manage to kill a couple Grimm.",
+                "count": 2,
+                "exclusive": true
+            },
+            {
+                "character": "Blake",
+                "score": "useless",
+                "description": "Right after the train splits.",
+                "count": 4
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "She fires at the off-screen Grimm, but she ends up fighting it hand-to-hand in just a moment.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She propels herself at the Grimm.",
+                "count": 1
+            },
+            {
+                "character": "Yang",
+                "score": "useful",
+                "description": "She uses a bullet to finish her combo.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "She uses the recoil from Crescent Rose to slice through two Grimm, then a bullet to finish off a third.",
+                "count": 3
+            },
+            {
+                "character": "Blake",
+                "score": "useless",
+                "description": "Blake, GS's pistol isn't useful for killing things.",
+                "count": 6
+            },
+            {
+                "character": "Yang",
+                "score": "useless",
+                "description": "She's firing off of the side of the train.",
+                "count": 3
+            },
+            {
+                "character": "Ruby",
+                "score": "useless",
+                "description": "She fires at the Grimm after it knocks Qrow down.",
+                "count": 5
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She uses the recoil from EC to propel herself toward the Grimm.",
+                "count": 1
+            },
+            {
+                "character": "Blake",
+                "score": "useless",
+                "description": "GS pistol still isn't useful.",
+                "count": 2
+            },
+            {
+                "character": "Yang",
+                "score": "utility",
+                "description": "She uses EC to play tetherball with GS in order to ground the Grimm.",
+                "count": 7
+            },
+            {
+                "character": "Qrow",
+                "score": "useful",
+                "description": "He and Ruby team up to kill the grounded Grimm.",
+                "count": 1
+            },
+            {
+                "character": "Ruby",
+                "score": "useful",
+                "description": "She and Qrow team up to kill the grounded Grimm.",
+                "count": 1
+            },
+            {
+                "character": "Qrow",
+                "score": "utility",
+                "description": "He seems to fire Harbinger as he launches himself at the Grimm in order to speed up. For once, however, Ruby doesn't seem to do this.",
+                "count": 3
+            }
+        ],
+        "Chapter 3": [
+            {
+                "character": "humanity",
+                "score": "useless",
+                "description": "Okay, they're firing at the God of Darkness, but still.",
+                "count": 20,
+                "exclusive": true,
+                "bow": true
             }
         ]
     }

@@ -2,7 +2,7 @@ import argparse
 import collections
 import colorsys
 import json
-import matplotlib as mpl
+import matplotlib as mpl; mpl.use('agg')
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import numpy as np

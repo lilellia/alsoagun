@@ -1,13 +1,15 @@
 # ALSO A GUN
 
-## Most Recent Data Update: Volume 6 Trailer
-V6C1 has not been mined yet, but the V6 intro has been.
+## Most Recent Data Update: Volume 6 Chapter 5 "The Coming Storm"
+Note: V6C4 and V6C5 do not include any bullets fired.
 
 So... have you noticed that so many weapons in the RWBY universe are guns, even when that doesn't make sense, like Crescent Rose? Well, how good are they? I've counted *every* bullet from *every* episode, and put them in one of three categories:
 
 * useful: The bullet actually is useful in killing something.
 * utility: The bullet serves some utility, such as creating a distraction or providing movement options using the gun's recoil.
 * useless: The bullet doesn't do anything (misses are also in this category).
+
+Note that small non-bullet projectiles, such as Cinder's Dust fragments or Weiss's ice shards are not included. Magic (such as Amber's leaf-ice shards or the magic in the V6C3 flashback) is also not included. By default, arrows are not counted, though they are in the data (see the `-b` flag, below)
 
 ## ./data
 
