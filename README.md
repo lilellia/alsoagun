@@ -9,7 +9,7 @@ So... have you noticed that so many weapons in the RWBY universe are guns, even 
 * utility: The bullet serves some utility, such as creating a distraction or providing movement options using the gun's recoil.
 * useless: The bullet doesn't do anything (misses are also in this category).
 
-Note that small non-bullet projectiles, such as Cinder's Dust fragments or Weiss's ice shards are not included. Magic (such as Amber's leaf-ice shards or the magic in the V6C3 flashback) is also not included. By default, arrows are not counted, though they are in the data (see the `-b` flag, below)
+Note that small non-bullet projectiles, such as Cinder's Dust fragments or Weiss's ice shards are not included. Magic (such as Amber's leaf-ice shards or the magic in the V6C3 flashback) is also not included. By default, arrows are not counted, though they are in the raw data (in the .sqlite3 and .json files -- not the .csv files, nor in any of the provided graphs) (see the `-b` flag, below)
 
 ## ./data
 
